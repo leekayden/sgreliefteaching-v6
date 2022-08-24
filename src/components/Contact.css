@@ -4,6 +4,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+input, select, textarea{
+  color: #ff0000;
+}
+
+textarea:focus, input:focus {
+  color: #ff0000;
+}
 body {
   font-family: 'Poppins', sans-serif;
   display: flex;
