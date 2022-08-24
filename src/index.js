@@ -14,6 +14,7 @@ import NotFound from './components/NotFound'
 import Tests from './components/tests/tests'
 import About from './components/about/about'
 import Contact from './components/contact';
+import Login from './components/login';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -24,7 +25,7 @@ root.render(
         <Route exact path="/" element={<App />} />
         <Route exact path="contact" element={<Contact />} />
         <Route exact path="signup" element={<App />} />
-        <Route exact path="login" element={<App />} />
+        <Route exact path="login" element={<Login />} />
         <Route exact path="about" element={<About />} />
         <Route exact path="tests" element={<Tests />} />
         <Route exact path="*" element={<NotFound />} />

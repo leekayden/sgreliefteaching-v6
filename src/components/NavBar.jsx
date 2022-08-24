@@ -5,7 +5,7 @@ const NavBar = () => {
     <div>
         <nav>
             <div className="logo">
-                <img src="https://cdn.cloudservetechcentral.com/sgreliefteaching/logo-lg.png" alt="SGreliefteaching Logo"/>
+                <a href="/" rel="noopener noreferrer"><img src="https://cdn.cloudservetechcentral.com/sgreliefteaching/logo-lg.png" alt="SGreliefteaching Logo"/></a>
             </div>
             <div className="hamburger">
                 <div className="line1"></div>

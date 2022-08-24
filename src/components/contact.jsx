@@ -14,7 +14,7 @@ function contact() {
           <p>Need to contact us on any questions and queries? No problem!</p>
 
           <form id="contact-form" method="post">
-            <label for="name">Full name</label>
+            <label htmlFor="name">Full name</label>
             <input
               type="text"
               id="name"
@@ -22,7 +22,7 @@ function contact() {
               placeholder="Your Full Name"
               required
             />
-            <label for="email">Email Address</label>
+            <label htmlFor="email">Email Address</label>
             <input
               type="email"
               id="email"
@@ -30,7 +30,7 @@ function contact() {
               placeholder="Your Email Address"
               required
             />
-            <label for="message">Message</label>
+            <label htmlFor="message">Message</label>
             <textarea
               rows="6"
               placeholder="Your Message"
