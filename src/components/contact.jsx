@@ -1,46 +1,54 @@
-import React from 'react'
-import './Contact.css'
+import React from "react";
+import "./Contact.css";
+import NavBar from "./NavBar";
 
 function contact() {
   return (
     <div>
-        <div class="contact-from">
-            <div class="form-area">
-                <div class="animated fadeInDown">
-                    <h2>Contact Us</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente.</p>
-                </div>
-                
-                <div class="contact">
-                    <div class="map animated fadeInLeft">
-                    </div>
-
-                    <form class="form animated fadeInUp">
-                        <label>
-                            <input type="email" class="email" id="email" required/>
-                            <div class="label email-text">E-mail</div>
-                        </label>
-
-                        <label>
-                            <input type="text" class="subject" id="subject" required/>
-                            <div class="label subject-text">Subject</div>
-                        </label>
-
-                        <label>
-                            <textarea class="help-box" id="helpBox" cols="30" rows="10" required></textarea>
-                            <div class="label help-text">How we can help?</div>
-                        </label>
-
-                        <div class="submit-area">
-                            <input type="submit" id="submit" value="Submit"/>
-                            <i class="far fa-paper-plane"></i>
-                        </div>
-                    </form>
-                </div>
-            </div>
+      <NavBar />
+      <div className="contact-container">
+        <div className="left-col">
         </div>
+        <div className="right-col">
+          <h1>Contact us</h1>
+          <p>Need to contact us on any questions and queries? No problem!</p>
+
+          <form id="contact-form" method="post">
+            <label for="name">Full name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Full Name"
+              required
+            />
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email Address"
+              required
+            />
+            <label for="message">Message</label>
+            <textarea
+              rows="6"
+              placeholder="Your Message"
+              id="message"
+              name="message"
+              required
+            ></textarea>
+            <button type="submit" id="submit" name="submit">
+              Send
+            </button>
+          </form>
+
+          <div id="error"></div>
+          <div id="success-msg"></div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default contact
+export default contact;
