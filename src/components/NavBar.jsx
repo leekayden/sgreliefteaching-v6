@@ -13,13 +13,11 @@ const NavBar = () => {
                 <div class="line3"></div>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Solutions</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><button class="login-button" href="#">Login</button></li>
-                <li><button class="join-button" href="#">Join</button></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><button class="login-button" href="/login">Login</button></li>
+                <li><button class="join-button" href="/signup">Join</button></li>
             </ul>
         </nav>
     </div>

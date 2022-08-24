@@ -20,10 +20,13 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="about" element={<About />} />
-        <Route path="tests" element={<Tests />} />
-        <Route path="*" element={<NotFound />} />
+        <Route exact path="/" element={<App />} />
+        <Route exact path="contact" element={<App />} />
+        <Route exact path="signup" element={<App />} />
+        <Route exact path="login" element={<App />} />
+        <Route exact path="about" element={<About />} />
+        <Route exact path="tests" element={<Tests />} />
+        <Route exact path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
