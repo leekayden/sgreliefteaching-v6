@@ -6,7 +6,6 @@ const about = () => {
     <div>
         <NavBar />
         <h1>About us</h1>
-        <h2>At SGreliefteaching, we make sure that blah blah</h2>
     </div>
   )
 }
