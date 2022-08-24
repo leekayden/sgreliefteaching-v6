@@ -13,6 +13,7 @@ import {
 import NotFound from './components/NotFound'
 import Tests from './components/tests/tests'
 import About from './components/about/about'
+import Contact from './components/contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -21,7 +22,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<App />} />
-        <Route exact path="contact" element={<App />} />
+        <Route exact path="contact" element={<Contact />} />
         <Route exact path="signup" element={<App />} />
         <Route exact path="login" element={<App />} />
         <Route exact path="about" element={<About />} />
