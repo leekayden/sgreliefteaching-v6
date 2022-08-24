@@ -12,6 +12,7 @@ import {
 // pages
 import NotFound from './components/NotFound'
 import Tests from './components/tests/tests'
+import About from './components/about/about'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -20,6 +21,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="about" element={<About />} />
         <Route path="tests" element={<Tests />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
