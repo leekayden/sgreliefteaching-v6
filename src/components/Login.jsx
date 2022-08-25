@@ -1,6 +1,8 @@
 import React from 'react'
 import './Login.css'
 
+console.log("Hello")
+
 const inputs = document.querySelectorAll(".input");
 
 
