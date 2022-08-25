@@ -2,7 +2,7 @@ import React from 'react'
 
 const NavBar = () => {
   function goToLink(link) {
-    location.href = link;
+    window.location.href = link;
   }
   return (
     <div>
