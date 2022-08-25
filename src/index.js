@@ -14,7 +14,7 @@ import NotFound from './components/NotFound'
 import Tests from './components/tests/tests'
 import About from './components/about/about'
 import Contact from './components/contact';
-import Login from './components/login';
+import Login from './components/Login';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

@@ -3,7 +3,7 @@ import './Login.css'
 
 console.log("Hello")
 
-const inputs = document.querySelectorAll("input");
+const inputs = document.querySelectorAll(".input");
 
 
 function addcl(){
@@ -13,7 +13,7 @@ function addcl(){
 
 function remcl(){
 	let parent = this.parentNode.parentNode;
-	if(this.value == ""){
+	if(this.value === ""){
 		parent.classList.remove("focus");
 	}
 }
@@ -26,35 +26,35 @@ inputs.forEach(input => {
 function Login() {
   return (
     <div>
-	<img class="wave" src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/master/img/wave.png"/>
-	<div class="container">
-		<div class="img">
-			<img src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/master/img/bg.svg"/>
+	<img className="wave" alt='Wave' src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/master/img/wave.png"/>
+	<div className="container">
+		<div className="img">
+			<img alt='Background' src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/master/img/bg.svg"/>
 		</div>
-		<div class="login-content">
+		<div className="login-content">
 			<form>
-				<img src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/master/img/avatar.svg"/>
-				<h2 class="title">Welcome</h2>
-           		<div class="input-div one">
-           		   <div class="i">
-           		   		<i class="fas fa-user"></i>
+				<img alt='User' src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/master/img/avatar.svg"/>
+				<h2 className="title">Welcome</h2>
+           		<div className="input-div one">
+           		   <div className="i">
+           		   		<i className="fas fa-user"></i>
            		   </div>
-           		   <div class="div">
+           		   <div className="div">
            		   		<h5>Username</h5>
-           		   		<input type="text" class="input"/>
+           		   		<input type="text" className="input"/>
            		   </div>
            		</div>
-           		<div class="input-div pass">
-           		   <div class="i"> 
-           		    	<i class="fas fa-lock"></i>
+           		<div className="input-div pass">
+           		   <div className="i"> 
+           		    	<i className="fas fa-lock"></i>
            		   </div>
-           		   <div class="div">
+           		   <div className="div">
            		    	<h5>Password</h5>
-           		    	<input type="password" class="input"/>
+           		    	<input type="password" className="input"/>
             	   </div>
             	</div>
-            	<a href="#">Forgot Password?</a>
-            	<input type="submit" class="btn" value="Login"/>
+            	<a href="/pw-reset">Forgot Password?</a>
+            	<input type="submit" className="btn" value="Login"/>
             </form>
         </div>
     </div>
