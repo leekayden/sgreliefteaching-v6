@@ -24,6 +24,8 @@ inputs.forEach(input => {
 	input.addEventListener("blur", remcl);
 });
 
+document.getElementById("id").innerHTML = 5 + 6;
+
 function Login() {
   return (
     <div>
@@ -36,6 +38,7 @@ function Login() {
 			<form>
 				<img src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/master/img/avatar.svg"/>
 				<h2 class="title">Welcome</h2>
+                <h2 id='x'></h2>
            		<div class="input-div one">
            		   <div class="i">
            		   		<i class="fas fa-user"></i>
