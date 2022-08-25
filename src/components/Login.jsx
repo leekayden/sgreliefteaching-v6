@@ -18,13 +18,12 @@ function remcl(){
 	}
 }
 
-
 inputs.forEach(input => {
 	input.addEventListener("focus", addcl);
 	input.addEventListener("blur", remcl);
 });
 
-document.getElementById("id").innerHTML = 5 + 6;
+document.getElementById("id").innerHTML = "HELLO";
 
 function Login() {
   return (
