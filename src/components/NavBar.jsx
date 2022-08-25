@@ -17,8 +17,8 @@ const NavBar = () => {
           <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/contact">Contact Us</a></li>
-          <Link to='https://react.semantic-ui.com/'>
-            <li><button onclick="goToLink(https://google.com)" class="login-button">Login</button></li>
+          <Link to='/login'>
+            <li><button class="login-button">Login</button></li>
           </Link>
           <li><button class="join-button" href="/signup">Join</button></li>
         </ul>
