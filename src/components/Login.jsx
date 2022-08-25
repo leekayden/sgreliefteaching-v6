@@ -3,7 +3,7 @@ import './Login.css'
 
 console.log("Hello")
 
-const inputs = document.querySelectorAll(".input");
+const inputs = document.querySelectorAll("input");
 
 
 function addcl(){
