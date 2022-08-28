@@ -1,65 +1,57 @@
-import React from 'react'
-import './Login.css'
+import React from "react";
 
-console.log("Hello")
+const Login = props => (
+	<SignUpContainer />
+);
 
-const inputs = document.querySelectorAll(".input");
-
-
-function addcl(){
-	let parent = this.parentNode.parentNode;
-	parent.classList.add("focus");
-}
-
-function remcl(){
-	let parent = this.parentNode.parentNode;
-	if(this.value === ""){
-		parent.classList.remove("focus");
+class SignUpContainer extends React.Component {
+	render() {
+		return (
+			<div id='signUpContainer'>
+				<SignUpHeader title="SomethingCo" />
+				<SignUpForm />
+			</div>
+		)
 	}
 }
 
-inputs.forEach(input => {
-	input.addEventListener("focus", addcl);
-	input.addEventListener("blur", remcl);
-});
-
-function Login() {
-  return (
-    <div>
-	<img className="wave" alt='Wave' src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/master/img/wave.png"/>
-	<div className="container">
-		<div className="img">
-			<img alt='Background' src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/master/img/bg.svg"/>
+const SignUpHeader = props => (
+	<div id='signUpHeader'>
+		<div id='signUpHeaderTitle'>
+			{props.title}
 		</div>
-		<div className="login-content">
-			<form>
-				<img alt='User' src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/master/img/avatar.svg"/>
-				<h2 className="title">Welcome</h2>
-           		<div className="input-div one">
-           		   <div className="i">
-           		   		<i className="fas fa-user"></i>
-           		   </div>
-           		   <div className="div">
-           		   		<h5>Username</h5>
-           		   		<input type="text" className="input"/>
-           		   </div>
-           		</div>
-           		<div className="input-div pass">
-           		   <div className="i"> 
-           		    	<i className="fas fa-lock"></i>
-           		   </div>
-           		   <div className="div">
-           		    	<h5>Password</h5>
-           		    	<input type="password" className="input"/>
-            	   </div>
-            	</div>
-            	<a href="/pw-reset">Forgot Password?</a>
-            	<input type="submit" className="btn" value="Login"/>
-            </form>
-        </div>
-    </div>
-    </div>
-  )
-}
+	</div>
+);
+
+const FormInput = props => (
+	<div className='signUpRow'>
+		<input type={props.type} placeholder={props.placeholder} />
+	</div>
+);
+
+const FormCheckBox = props => (
+	<div className='signUpRow'>
+		<input id={props.id} type='checkbox' />
+		<label htmlFor={props.id}>{props.label}</label>
+	</div>
+);
+
+const FormButton = props => (
+	<div className='signUpRow'>
+		<button type='button'>{props.title}</button>
+	</div>
+);
+
+const SignUpForm = props => (
+	<div id='signUpFormContainer'>
+		<form id="signUpForm">
+			<FormInput type="text" placeholder="email" />
+				<FormInput type="password" placeholder="password" />
+				<FormInput type="password" placeholder="confirm" />
+				<FormCheckBox id="terms" label="I agree to the terms and conditions" />
+				<FormButton title="Sign Up" />
+		</form>
+	</div>
+);
 
 export default Login
